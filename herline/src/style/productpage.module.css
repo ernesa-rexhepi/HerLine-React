@@ -1,0 +1,48 @@
+.ProductPage{
+    display: flex;
+    width: 80%;
+     margin: 30px auto;
+    padding: 20px;
+    box-shadow:1rem 1rem 1rem rgb(173, 137, 143) ;
+    /* background-color: rgb(218, 203, 203); */
+    
+}
+.ProductPhoto{
+    background-color: rgb(232, 220, 220);
+    width:60%;
+ margin-left: 100px;
+}
+.ProductDescription{
+    padding: 20px;
+    width: 45%;
+}
+.ProductDescription button{
+    width: 150px;
+}
+.ProductDescription h1{
+    color: black;
+    font-weight: bold;
+    margin-left: 0px;
+}
+.ProductDescription h2{
+    margin-left:0px;
+}
+.ProductSize{
+    display: flex;
+
+}
+.ProductDescription p{
+margin-bottom: 0px;
+}
+.ProductSize h3{
+border:1px solid black;
+border-radius: 50px;
+color: black;
+text-align: center;
+margin:10px 10px 10px 0px;
+width: 35px;
+height: 35px;
+}
+.ProductDescription h4{
+margin:5px 0px 10px 0px;
+}

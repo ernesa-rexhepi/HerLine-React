@@ -1,25 +1,89 @@
-import logo from './logo.svg';
-import './App.css';
+import { createBrowserRouter, RouterProvider } from "react-router-dom"; 
+import { MainProvider } from "./context/MainContext";
+import Home from "../src/pages/Home"
+import Products from "../src/pages/Products"
+import About from "../src/pages/About"
+import Login from "../src/pages/Login"
+import Cart from "../src/pages/Cart"
+import AddProduct from "../src/pages/AddProduct"
+import ProductPage from "../src/pages/ProductPage"
+import PrivateRoute  from "./middleware/PrivateRoute";
+import NotFound from "../src/pages/NotFound"
+import "react-toastify/dist/ReactToastify.css";
+import { ToastContainer } from "react-toastify";
 
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: (
+      <MainProvider>
+        <Home />
+      </MainProvider>
+    ),
+  },
+   {
+    path: "/products",
+    element: (
+      <MainProvider>
+        <Products />
+      </MainProvider>
+    ),
+  },
+  {
+    path: "/about",
+    element: (
+      <MainProvider>
+        <About />
+      </MainProvider>
+    ),
+  },  {
+    path: "/products/:id",
+    element: (
+      <MainProvider>
+        <ProductPage />
+      </MainProvider>
+    ),
+  },
+  {
+    path: "/login",
+    element: (
+      <MainProvider>
+        <Login />
+      </MainProvider>
+    ),
+  },{
+    path:"/addproduct",
+    element: (
+      <MainProvider>
+        <PrivateRoute>
+          <AddProduct />
+        </PrivateRoute>
+      </MainProvider>
+    ),
+  },
+  {
+    path: "/cart",
+    element: (
+      <MainProvider>
+        <PrivateRoute>
+          <Cart />
+        </PrivateRoute>
+      </MainProvider>
+    ),
+  },
+  {
+    path: "*",
+    element: <NotFound />,
+  },
+]);
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <RouterProvider router={router} />
+      <ToastContainer />
+    </>
   );
 }
 
 export default App;
+

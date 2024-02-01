@@ -1,0 +1,60 @@
+table{
+    width:80%;
+    border-collapse:collapse;
+ margin:3% 10% 0 10%;
+ 
+}
+.CartInfo{
+    display: flex;
+    flex-wrap:wrap;
+}
+th{
+    text-align: left;
+    padding: 5px;
+    color: white;
+    background: rgb(229, 149, 176);
+    font-weight: normal;
+}
+td{
+    padding: 10px 5px;
+}
+td input{
+    width:40px;
+    height: 30px;
+    padding: 5px;
+}
+/* td a{
+    color:red;
+    font-size: 12px;
+} */
+.CartInfo img{
+    width: 100px;
+    height: 100px;
+    margin-right:10px;
+}
+.CartInfo p{
+    width: 450px;
+    margin-left: 10px;
+}
+.TotalPrice{
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 20px;
+}
+.TotalPrice table{
+    border-top:3px solid rgb(229, 149, 176) ;
+    width:100%;
+    max-width: 370px;
+
+}
+td:last-child{
+    text-align: right;
+
+}
+td:last-child{
+    text-align: right;
+}
+input[type=number]{
+    width: 200px;
+  
+}

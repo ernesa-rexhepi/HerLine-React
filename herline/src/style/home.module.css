@@ -1,0 +1,149 @@
+body{
+    margin:0px;
+    height:100%;
+    width: 100%;
+   
+}
+
+a{
+    text-decoration: none;
+    color: #555;
+  }
+  p{
+    color:#555;
+  }
+  .HomeContainer {
+    display: flex;
+    flex-direction:row ;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top:70px ;
+    
+    }
+    .HomeDescription{
+        flex-basis:50%;
+        min-width: 300px;
+      
+    } 
+    .HomePicture img{
+       width:300px;
+        box-shadow:0rem 2rem 6rem rgb(160, 56, 74) ;
+   }
+   .HomeDescription p{
+    color: rgb(131, 94, 100);
+    margin-left: 5%;
+    line-height: 1;
+    
+}
+   h1{
+    color:rgb(229, 149, 176);
+    font-size: 50px;
+    font-family:  'Poppins', sans-serif;
+    line-height: 50px;
+    margin-left: 3%;
+    letter-spacing: 2px;
+}
+.Button{
+
+        display: inline-block;
+        background: rgb(229, 149, 176);
+        color: #fff;
+        padding:8px 30px;
+        margin-left: 5%;
+        border-radius: 7px;
+        transition: background 0.5s;
+    
+}
+.Button:hover{
+  background:#563434;
+
+}
+
+.TestinomialWrapper{
+  display: flex;
+  flex-direction:row ;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-around;
+ 
+}
+.testinomial{
+  padding-top: 100px;
+}
+.testinomial .TestinomialPic{
+  text-align: center;
+  padding:40px 20px;
+  cursor: pointer;
+  transition: transform 0.5s;
+}
+.testinomial .TestinomialPic img{
+  width: 50px;
+  margin-top: 20px;
+  border-radius: 50%;
+}
+.testinomial .TestinomialPic:hover{
+  transform: translateY(-10px);
+}
+.fa.fa-quote-left{
+  font-size: 34px;
+  color: #ff523b;
+ }
+
+.TestinomialPic p{
+  font-size: 12px;
+  margin: 9px 0;
+  color: #777;
+  line-height: 3;
+}
+.testinomial .TestinomialPic h3{
+  font-weight: 600;
+  color: #555;
+  font-size: 16px;
+}
+.TestinomialPic{
+  flex-basis:30px;
+  min-width:250px;
+  margin-bottom:30px;
+  box-shadow:1rem 1rem 1rem rgb(173, 137, 143) ;
+}
+.TestinomialContent{
+max-width:1080px;
+margin:auto;
+padding-left:125px;
+padding-right:125px;
+}
+
+.ProductsSliderPic{
+  background-position: center;
+  background-size: cover;
+ height: 500px;
+ 
+}
+.ProductsSlider{
+  width: 400px;
+ 
+}
+.SliderPage{
+  display: flex;
+  justify-content: flex-start;
+  max-width: 1000px;
+  height: 500px;
+margin:40px auto;
+}
+.SliderDescription{
+  margin-left:30px;
+}
+
+.SliderButton{
+ background-color:rgb(229, 149, 176);
+ padding:10px 50px;
+ margin:20px 0px;
+border-radius: 20px;
+text-align: center;
+}
+
+.SliderButton:hover{
+  background-color:#563434;
+  color: white;
+}
